@@ -126,6 +126,14 @@
         .bg-light {
             background-color: #f8f0fb !important; /* Rosa pastel */
         }
+        .concurso-imagen {
+            max-width: 100%; /* La imagen no debe exceder el ancho del contenedor */
+            height: auto;    /* Mantiene la proporción de la imagen */
+            border-radius: 10px; /* Opcional: para redondear las esquinas de la imagen */
+            margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: sombra para la imagen */
+        }
+        
     </style>
 </head>
 <body class="bg-light hidden">
@@ -191,6 +199,7 @@
         <div class="container">
             <h2 class="seccion-titulo">¡Comparte tus Recuerdos!</h2>
             <div class="text-center" id="concurso-fotos">
+                <img src="https://images.unsplash.com/photo-1519681393784-d1202a74c79a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagen del concurso de fotografía" class="concurso-imagen">
                 <h3 class="h2 text-indigo-600 mb-4">Concurso de Fotografía</h3>
                 <p class="concurso-info">
                     Captura los momentos más especiales de la comunión de Paula y participa en nuestro concurso de fotografía.
@@ -207,7 +216,7 @@
             </div>
         </div>
     </section>
-
+    
     <footer class="bg-gray-800 text-white text-center py-4">
         <p>© 2025 Celebración de la Comunión de Paula. Todos los derechos reservados.</p>
     </footer>
